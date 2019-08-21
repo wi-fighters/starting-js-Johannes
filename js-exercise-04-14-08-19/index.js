@@ -6,7 +6,7 @@ const secondElem = name[1];
 const sixthElem = name[5];
 console.log(`2nd element: ${secondElem}, 6th element: ${sixthElem}`);
 
-// 2
+//
 
 const js = "JavaScript";
 console.log(`The length of the string is: ${js.length} characters`);
@@ -50,5 +50,5 @@ console.log(`${firstString[0]}${firstString}${firstString[0]}`);
 // 9
 
 console.log(
-    `${firstString.substring(7)}${firstString}${firstString.substring(7)}`
-  );
+  `${firstString.substring(7)}${firstString}${firstString.substring(7)}`
+);
