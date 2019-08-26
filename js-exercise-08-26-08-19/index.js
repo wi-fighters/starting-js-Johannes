@@ -41,11 +41,33 @@
 
 // //9. Making use of `+=` and `-=`, print to screen a string that has x drinking one more cup of coffee, with (n - 1) less days before exam.
 
-// coffee += 1;
+//take this as input
+// const days = 5;
+// const name = "Nicolas";
 
-// daysBeforeExam -= 1;
+// //return as output
+// const cups = 1;
 
-function schmozzler(name) {
-  if (name === string) {
+function getCoffeeInfo(daysUntilExam, name) {
+  if (daysUntilExam > 5) {
+    return `What's on Neflix? What exam?`;
+  } else if (daysUntilExam < 0) {
+    return `Detox time, exam is over.`;
+  } else {
+    cups = 6 - daysUntilExam;
+    return `With ${daysUntilExam} days until the exam, ${name} drinks ${cups} cups of coffee per day.`;
   }
 }
+
+console.log(getCoffeeInfo(0, "Nicolas"));
+
+//random concat practice
+// let phrase1 = "firstPart";
+// let phrase2 = "secondPart";
+// let phrase3 = phrase1.concat(phrase2);
+// console.log(phrase3);
+
+// let array1 = ["sausage", "anotherSausage"];
+// let array2 = ["water", "evenMoreWater"];
+// let array3 = array1.concat(array2);
+// console.log(array3);
