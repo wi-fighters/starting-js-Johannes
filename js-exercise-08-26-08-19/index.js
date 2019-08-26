@@ -1,43 +1,51 @@
-//1. Declare a variable called name. Assign a string value. Print to screen.
+// //1. Declare a variable called name. Assign a string value. Print to screen.
 
-//function nameString(type, value) {
-// var name = type + "" + value;
-// return name;
-//}
+// let name = "Johannes";
 
-//console.log(nameString("Name:", "Johannes"));
+// console.log(name);
 
-//2. Print to screen that name with a "Schm" in front of it.
+// //2. Print to screen that name with a "Schm" in front of it.
 
-//function nameString(type, value) {
-// var name = type + " " + "Schm" + value;
-//return name;
-//}
+// console.log(`Schm${name}`);
 
-//console.log(nameString("Name", "Johannes"));
+// //3. What value does name have now ? Comment your answer and then print name to screen to test.
 
-//3. What value does name have now ? Comment your answer and then print name to screen to test.
-//Not necessary?
+// //Name is unchanged
 
-//4. Assign another string value to name. Print to screen. Comment why name has now had two different values.
-//Not necessary?
+// //4. Assign another string value to name. Print to screen. Comment why name has now had two different values.
+// //Not necessary?
 
-//5. Declare a variable called coffee. Assign it a numeric value.
+// name = "Simon";
 
-//function brewingCoffee(amount) {
-//  const cups = amount + " cups of coffee";
-// return cups;
-//}
+// console.log(name);
 
-//console.log(brewingCoffee(5));
+// //5. Declare a variable called coffee. Assign it a numeric value.
 
-//6. Print to screen a string that tells us x regularly drinks y cups of coffee per day.
+// let coffee = 5;
 
-function stayingHydrated(amountRegular, amountCoffee) {
-  const regular = amountRegular + " regular drinks";
-  const coffee = amountCoffee + " cups of coffee";
-  const combination = `You should drink at least ${regular} and ${coffee} per day. :)`;
-  return combination;
+// //6. Print to screen a string that tells us x regularly drinks y cups of coffee per day.
+
+// name = "Marlon";
+
+// console.log(`${name} regularly drinks ${coffee} cups of coffee per day. :)`);
+
+// // 7. Declare a variable called daysBeforeExam. Assign it a numeric value.
+
+// let daysBeforeExam = 6;
+
+// //8. Print to screen a string that tells us x drinks y cups of coffee with n days before exam.
+
+// console.log(
+//   `${name} regularly drinks ${coffee} cups of coffee per day ${daysBeforeExam} days before exam.`
+// );
+
+// //9. Making use of `+=` and `-=`, print to screen a string that has x drinking one more cup of coffee, with (n - 1) less days before exam.
+
+// coffee += 1;
+
+// daysBeforeExam -= 1;
+
+function schmozzler(name) {
+  if (name === string) {
+  }
 }
-
-console.log(stayingHydrated(5, 13));
