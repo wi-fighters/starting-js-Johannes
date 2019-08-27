@@ -4,3 +4,4 @@ function tellFortune(numberChildren, partnerName, geoLocation, jobTitle) {
 console.log(tellFortune(3, "Steffi", "Berlin", "web developer"));
 console.log(tellFortune(2, "Sabine", "Hamburg", "psychologist"));
 console.log(tellFortune(4, "Karo", "Marburg", "teacher"));
+test;
