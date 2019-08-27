@@ -54,12 +54,12 @@ function getCoffeeInfo(daysUntilExam, name) {
   } else if (daysUntilExam < 0) {
     return `Detox time, exam is over.`;
   } else {
-    cups = 6 - daysUntilExam;
+    const cups = 6 - daysUntilExam;
     return `With ${daysUntilExam} days until the exam, ${name} drinks ${cups} cups of coffee per day.`;
   }
 }
 
-console.log(getCoffeeInfo(0, "Nicolas"));
+console.log(getCoffeeInfo(10, "Nicolas"));
 
 //random concat practice
 // let phrase1 = "firstPart";
