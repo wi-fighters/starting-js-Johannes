@@ -1,5 +1,5 @@
-function calculateDogAge(humanAge) {
-  puppyAge = humanAge * 7;
+function calculateDogAge(humanAge, conversionYears) {
+  puppyAge = humanAge * conversionYears;
   return puppyAge;
 }
-console.log(`Your dog is ${calculateDogAge(3)} years old in dog years`);
+console.log(`Your dog is ${calculateDogAge(3, 7)} years old in dog years`);
