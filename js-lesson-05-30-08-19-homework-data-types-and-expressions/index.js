@@ -19,12 +19,12 @@ console.log(`typeof myBool:\t${typeof myBool}`);
 
 let myArr = ["yup", "another", "array"];
 
-// console.log(`\nmyArr:\t\t${myArr}`);
+console.log(`\nmyArr:\t\t${myArr}`);
 // this is not a good way of checking whether you have an array
-// console.log(`typeof myArr:\t${typeof myArr}`);
+//console.log(`typeof myArr:\t${typeof myArr}`);
 
 // this is a much better way :)
-// console.log(`Array.isArray(myArr):\t${Array.isArray(myArr)}`);
+console.log(`Array.isArray(myArr):\t${Array.isArray(myArr)}`);
 
 function myFunc() {
   console.log("My function is running");
