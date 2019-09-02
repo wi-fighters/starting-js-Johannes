@@ -2,15 +2,17 @@
 let globalBandNameArray = [];
 
 function generateBandName(clothingColor, lastFoodEaten) {
-  // declare the return variable and indicate its type
-  let bandName = "";
+  //removed bandName declaration to shorten code
 
   //removed statements to functions
-  color = capitalizeFirstLetter(clothingColor);
-  food = capitalizeFirstLetter(lastFoodEaten);
+  const color = makeTasty(
+    clothingColor[0].toUpperCase() + clothingColor.substr(1).toLowerCase()
+  );
+  const food =
+    lastFoodEaten[0].toUpperCase() + lastFoodEaten.substr(1).toLowerCase();
 
   // use the formatted inputs to build the return value
-  bandName = `The ${color} ${food}!`;
+  let bandName = `The ${color} ${food}!`;
   globalBandNameArray = [color, food];
 
   // keep the return line short and sweet
@@ -22,6 +24,35 @@ function capitalizeFirstLetter(partOfName) {
   return partOfName[0].toUpperCase() + partOfName.substr(1).toLowerCase();
 }
 
-console.log(generateBandName("blACK", "spAGhetti"));
+function makeTasty(color) {
+  let tastyColor = "";
+
+  switch (color) {
+    case "Red":
+      tastyColor = "Chilli";
+      break;
+    case "Orange":
+      tastyColor = "Tangerine";
+      break;
+    case "Yellow":
+      tastyColor = "Pineapple";
+      break;
+    case "Green":
+      tastyColor = "Sage";
+      break;
+    case "Blue":
+      tastyColor = "Blueberry";
+      break;
+    case "Purple":
+      tastyColor = "Plum";
+      break;
+    default:
+      tastyColor = color;
+  }
+
+  return tastyColor;
+}
+
+console.log(generateBandName("purple", "spAGhetti"));
 //print global array
 console.log(globalBandNameArray);
