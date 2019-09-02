@@ -6,8 +6,8 @@ function generateBandName(clothingColor, lastFoodEaten) {
   let bandName = "";
 
   //removed statements to functions
-  color = capitalizeColor(clothingColor);
-  food = capitalizeFood(lastFoodEaten);
+  color = capitalizeFirstLetter(clothingColor);
+  food = capitalizeFirstLetter(lastFoodEaten);
 
   // use the formatted inputs to build the return value
   bandName = `The ${color} ${food}!`;
@@ -17,14 +17,9 @@ function generateBandName(clothingColor, lastFoodEaten) {
   return bandName;
 }
 
-//function for color part of name, also shortened it a bit
-function capitalizeColor(clothingColor) {
-  return clothingColor[0].toUpperCase() + clothingColor.substr(1).toLowerCase();
-}
-
-//function for food part of name, also shortened it a bit
-function capitalizeFood(lastFoodEaten) {
-  return lastFoodEaten[0].toUpperCase() + lastFoodEaten.substr(1).toLowerCase();
+//build a function that works with both arguments, less code = good
+function capitalizeFirstLetter(partOfName) {
+  return partOfName[0].toUpperCase() + partOfName.substr(1).toLowerCase();
 }
 
 console.log(generateBandName("blACK", "spAGhetti"));
