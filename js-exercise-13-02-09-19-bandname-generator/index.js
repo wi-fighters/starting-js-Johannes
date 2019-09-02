@@ -1,5 +1,6 @@
 // create glbal array
 let globalBandNameArray = [];
+console.log(globalBandNameArray);
 
 function generateBandName(clothingColor, lastFoodEaten) {
   //removed bandName declaration to shorten code
@@ -54,5 +55,5 @@ function makeTasty(color) {
 }
 
 console.log(generateBandName("purple", "spAGhetti"));
-//print global array
-console.log(globalBandNameArray);
+// //print global array
+console.log(globalBandNameArray.toString());
