@@ -1,15 +1,19 @@
 let globalBandNameArray = [];
 
 function generateBandName(clothingColor, lastFoodEaten) {
-  const color = makeTasty(
-    clothingColor[0].toUpperCase() + clothingColor.substr(1).toLowerCase()
-  );
+  const color = function() {
+    return makeTasty(
+      clothingColor[0].toUpperCase() + clothingColor.substr(1).toLowerCase()
+    );
+  };
   const food = function() {
-    lastFoodEaten[0].toUpperCase() + lastFoodEaten.substr(1).toLowerCase();
+    return (
+      lastFoodEaten[0].toUpperCase() + lastFoodEaten.substr(1).toLowerCase()
+    );
   };
 
-  let bandName = `The ${color} ${food()}!`;
-  globalBandNameArray = [color, food()];
+  let bandName = `The ${color()} ${food()}!`;
+  globalBandNameArray = [color(), food()];
 
   return bandName;
 }
