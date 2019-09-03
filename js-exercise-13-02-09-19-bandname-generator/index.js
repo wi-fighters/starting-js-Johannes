@@ -47,6 +47,6 @@ function makeTasty(color) {
   return tastyColor;
 }
 
-console.log(generateBandName("purple", "spAGhetti"));
+console.log(generateBandName("red", "rHubArb"));
 // //print global array
 console.log(globalBandNameArray.toString());
