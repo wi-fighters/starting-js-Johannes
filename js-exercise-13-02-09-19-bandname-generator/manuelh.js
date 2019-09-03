@@ -15,9 +15,11 @@ function generateBandName(clothingColour, lastFoodEaten) {
 
   let bandName = `The ${color} ${food}`;
 
+  //is there a reason your use push here instead of =?
   arrBandNames.push(bandName);
 
-  console.log(arrBandNames);
+  // you can have the array put out as a string by adding toString
+  console.log(arrBandNames.toString());
 
   return bandName;
 }
