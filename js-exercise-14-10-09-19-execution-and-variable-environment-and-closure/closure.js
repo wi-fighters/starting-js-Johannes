@@ -1,10 +1,21 @@
 //https://www.w3schools.com/js/js_function_closures.asp
 
+var add = function() {
+  var counter = 0;
+  return function() {
+    counter += 1;
+    return counter;
+  };
+};
+
+console.log(add);
+console.log(add());
+console.log(add()());
+
 // var add = (function() {
 //   var counter = 0;
 //   return function() {
 //     counter += 1;
-//     console.log();
 //     return counter;
 //   };
 // })();
@@ -29,17 +40,17 @@
 
 // setLocation("Berlin");
 
-function setLocation(city) {
-  var country = "France";
+// function setLocation(city) {
+//   var country = "France";
 
-  function printLocation() {
-    console.log("You are in " + city + ", " + country);
-  }
+//   function printLocation() {
+//     console.log("You are in " + city + ", " + country);
+//   }
 
-  return printLocation;
-}
+//   return printLocation;
+// }
 
-var currentLocation = setLocation("Paris");
-//at this point, currentLocation = "console.log("You are in...")":
-console.log(currentLocation);
-currentLocation(); // output: You are in Paris, France
+// var currentLocation = setLocation("Paris");
+// //at this point, currentLocation = "console.log("You are in...")":
+// console.log(currentLocation);
+// currentLocation(); // output: You are in Paris, France
