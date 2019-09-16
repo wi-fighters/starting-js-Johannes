@@ -8,8 +8,16 @@ var add = function() {
   };
 };
 
-console.log(add);
-console.log(add());
+// console.log(add); //function data type
+// console.log(add()); //function data type
+// console.log(add()()); //number, 1
+// console.log(add()()); //number, still 1
+// var innerFunc = add();
+// console.log(innerFunc()); // same as add()(), so number, still 1
+// console.log(innerFunc()); // same as add()(), 2
+// console.log(innerFunc); //function data type
+add();
+console.log(add()());
 console.log(add()());
 
 // var add = (function() {
