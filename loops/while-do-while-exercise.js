@@ -94,46 +94,46 @@
 // console.log("\nDone!");
 
 //3.
-// const arrNames = [
-//   "steffi",
-//   "hannes",
-//   "eva",
-//   "jaime",
-//   "sausage",
-//   "dr doom death"
-// ];
-// console.log(arrNames);
-// let index = 0; // 1
+const arrNames = [
+  "steffi",
+  "hannes",
+  "eva",
+  "jaime",
+  "sausage",
+  "dr doom death"
+];
+console.log(arrNames);
+let index = 0; // 1
 
-// while (typeof arrNames[index] !== "undefined") {
-//   capFirstLetter =
-//     arrNames[index][0].toUpperCase() + arrNames[index].substring(1);
-//   arrNames[index] = capFirstLetter;
+while (typeof arrNames[index] !== "undefined") {
+  capFirstLetter =
+    arrNames[index][0].toUpperCase() + arrNames[index].substring(1);
+  arrNames[index] = capFirstLetter;
 
-//   if (arrNames[index].includes(" ")) {
-//     let indexMulti = 1;
-//     let arrMultiName = capFirstLetter.split(" ");
+  if (arrNames[index].includes(" ")) {
+    let indexMulti = 1;
+    let arrMultiName = capFirstLetter.split(" ");
 
-//     console.log(
-//       `There is at least one space in the name ${capFirstLetter}, so I went ahead and capitalised the next word(s) as well.`
-//     );
+    console.log(
+      `There is at least one space in the name ${capFirstLetter}, so I went ahead and capitalised the next word(s) as well.`
+    );
 
-//     do {
-//       let capFirstLetterMulti =
-//         arrMultiName[indexMulti][0].toUpperCase() +
-//         arrMultiName[indexMulti].substring(1);
+    do {
+      let capFirstLetterMulti =
+        arrMultiName[indexMulti][0].toUpperCase() +
+        arrMultiName[indexMulti].substring(1);
 
-//       arrMultiName[indexMulti] = capFirstLetterMulti;
-//       capFirstLetter = arrMultiName.join(" ");
-//       arrNames[index] = capFirstLetter;
+      arrMultiName[indexMulti] = capFirstLetterMulti;
+      capFirstLetter = arrMultiName.join(" ");
+      arrNames[index] = capFirstLetter;
 
-//       ++indexMulti;
-//     } while (typeof arrMultiName[indexMulti] !== "undefined");
-//   }
-//   ++index;
-// }
+      ++indexMulti;
+    } while (typeof arrMultiName[indexMulti] !== "undefined");
+  }
+  ++index;
+}
 
-// console.log(arrNames);
+console.log(arrNames);
 
 //5.
 // const item = "The End is Nigh.";
@@ -160,9 +160,3 @@
 // function calcFactor(firstNum, secondNum) {
 //   return secondNum % firstNum === 0;
 // }
-
-function snakify(text) {
-  return text.replace(/millenials/gi, "Snake People");
-}
-console.log(snakify("The Millenials are always up to something."));
-// The Snake People are always up to something.
