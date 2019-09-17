@@ -94,33 +94,46 @@
 // console.log("\nDone!");
 
 //3.
-const arrNames = ["steffi", "hannes", "eva", "jaime", "sausage", "dr doom"];
-console.log(arrNames);
-let index = 0; // 1
+// const arrNames = [
+//   "steffi",
+//   "hannes",
+//   "eva",
+//   "jaime",
+//   "sausage",
+//   "dr doom death"
+// ];
+// console.log(arrNames);
+// let index = 0; // 1
 
-while (typeof arrNames[index] !== "undefined") {
-  capFirstLetter =
-    arrNames[index][0].toUpperCase() + arrNames[index].substring(1);
-  arrNames[index] = capFirstLetter;
+// while (typeof arrNames[index] !== "undefined") {
+//   capFirstLetter =
+//     arrNames[index][0].toUpperCase() + arrNames[index].substring(1);
+//   arrNames[index] = capFirstLetter;
 
-  if (arrNames[index].includes(" ")) {
-    let arrMultiName = capFirstLetter.split(" ");
+//   if (arrNames[index].includes(" ")) {
+//     let indexMulti = 1;
+//     let arrMultiName = capFirstLetter.split(" ");
 
-    let capFirstLetterMulti =
-      arrMultiName[1][0].toUpperCase() + arrMultiName[1].substring(1);
+//     console.log(
+//       `There is at least one space in the name ${capFirstLetter}, so I went ahead and capitalised the next word(s) as well.`
+//     );
 
-    arrMultiName[1] = capFirstLetterMulti;
-    capFirstLetter = arrMultiName.join(" ");
-    arrNames[index] = capFirstLetter;
-    console.log(
-      `There is a space in the name ${capFirstLetter}, so I went ahead and capitalised the next word as well.`
-    );
-  }
+//     do {
+//       let capFirstLetterMulti =
+//         arrMultiName[indexMulti][0].toUpperCase() +
+//         arrMultiName[indexMulti].substring(1);
 
-  ++index;
-}
+//       arrMultiName[indexMulti] = capFirstLetterMulti;
+//       capFirstLetter = arrMultiName.join(" ");
+//       arrNames[index] = capFirstLetter;
 
-console.log(arrNames);
+//       ++indexMulti;
+//     } while (typeof arrMultiName[indexMulti] !== "undefined");
+//   }
+//   ++index;
+// }
+
+// console.log(arrNames);
 
 //5.
 // const item = "The End is Nigh.";
@@ -147,3 +160,9 @@ console.log(arrNames);
 // function calcFactor(firstNum, secondNum) {
 //   return secondNum % firstNum === 0;
 // }
+
+function snakify(text) {
+  return text.replace(/millenials/gi, "Snake People");
+}
+console.log(snakify("The Millenials are always up to something."));
+// The Snake People are always up to something.
