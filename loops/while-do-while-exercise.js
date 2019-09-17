@@ -69,13 +69,81 @@
 
 //1.
 
-const arrNumbers = [3, 5, 9, 2, 11, 13];
-let index = 0;
-let arrSum = 0;
+// const arrNumbers = [3, 5, 9, 2, 11, 13];
+// let index = 0;
+// let arrSum = 0;
 
-do {
-  console.log(`\n${arrSum} + ${arrNumbers[index]} =`);
-  arrSum = arrSum + arrNumbers[index];
-  console.log(arrSum);
+// do {
+//   console.log(`\n${arrSum} + ${arrNumbers[index]} =`);
+//   arrSum = arrSum + arrNumbers[index];
+//   console.log(arrSum);
+//   ++index;
+// } while (arrNumbers[index] != undefined);
+
+//2.
+// let numbers = 1;
+// let arrSum = 0;
+
+// do {
+//   console.log(`\n${arrSum} + ${numbers} =`);
+//   arrSum = arrSum + numbers;
+//   console.log(arrSum);
+//   ++numbers;
+// } while (numbers <= 20);
+
+// console.log("\nDone!");
+
+//3.
+const arrNames = ["steffi", "hannes", "eva", "jaime", "sausage", "dr doom"];
+console.log(arrNames);
+let index = 0; // 1
+
+while (typeof arrNames[index] !== "undefined") {
+  capFirstLetter =
+    arrNames[index][0].toUpperCase() + arrNames[index].substring(1);
+  arrNames[index] = capFirstLetter;
+
+  if (arrNames[index].includes(" ")) {
+    let arrMultiName = capFirstLetter.split(" ");
+
+    let capFirstLetterMulti =
+      arrMultiName[1][0].toUpperCase() + arrMultiName[1].substring(1);
+
+    arrMultiName[1] = capFirstLetterMulti;
+    capFirstLetter = arrMultiName.join(" ");
+    arrNames[index] = capFirstLetter;
+    console.log(
+      `There is a space in the name ${capFirstLetter}, so I went ahead and capitalised the next word as well.`
+    );
+  }
+
   ++index;
-} while (arrNumbers[index] != undefined);
+}
+
+console.log(arrNames);
+
+//5.
+// const item = "The End is Nigh.";
+// let times = 4;
+
+// do {
+//   console.log(item);
+//   --times;
+// } while (times > 0);
+
+// console.log("\nThe End is Here.");
+
+//Bonus
+// const arrFactors = [2, 4, 8, 16, 32];
+// let index = 0;
+
+// do {
+//   isFactor = calcFactor(arrFactors[index], arrFactors[index + 1]);
+//   ++index;
+// } while (isFactor && typeof arrFactors[index + 1] !== "undefined");
+
+// console.log(`${arrFactors} is a factor chain: ${isFactor}`);
+
+// function calcFactor(firstNum, secondNum) {
+//   return secondNum % firstNum === 0;
+// }
